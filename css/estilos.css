@@ -40,31 +40,47 @@ body{
 .imagenUno{
     height: 25rem;
     width: 25rem;
+  	transition: all 1s;
 }
+
+.imagenUno:hover{
+	height: 30rem;
+	width: 30rem;
+} 
 
 .imagenDos{
 	height: 25rem;
     width: 25rem;
+    transition: all 1s;
+}
+
+.imagenDos:hover{
+	height: 30rem;
+	width: 30rem;
 }
 
 .imagenTres{
     height: 25rem;
     width: 25rem;
+    transition: all 1s;
 }
+
+.imagenTres:hover{
+	height: 30rem;
+	width: 30rem;
+}
+
 
 .titulo{
 	font-family: 'Koulen', cursive;
 	font-size: 20px;
 }
-}
+
 .header{
-	display: inline-flex;
+	display: flex;
 	/*position: sticky;*/
 	justify-content: space-around;
 	grid-area: header;
-	background-image: url('../assets/fondoDos.jpg');
-	background-repeat-y: no-repeat;
-	background-blend-mode: hard-light;
 }
 .menu{
 	display: flex;
@@ -79,57 +95,59 @@ body{
 	grid-area: header;
 }
 
-.itemLogo{
-	display: flex;
-	background-image: url('../assets/fondoDos.jpg');
-	background-repeat-y: no-repeat;
-	justify-content: center;
+.imagenLogo{
+	border-radius: 40%;
+	animation-duration: 1.2s;
+   	animation-name: aparecer;
+   	animation-iteration-count: 5s;
+}
+
+@keyframes aparecer{
+	0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+
 }
 
 .itemUno{
-	/*grid-area: itemUno;*/
 	min-width: 20%;
 	
 }
 
 .itemDos{
-	/*grid-area: itemDos;*/
 	color: #fff;
 	min-width: 20%;
 }
 
 .itemTres{
-	/*grid-area: itemTres;*/
 	color: #fff;
 	min-width: 20%;
 }
 
 .itemCuatro{
-	/*grid-area: itemCuatro;*/
 	min-width: 20%;
 }
 
 .itemCinco{
-	/*grid-area: itemCinco;*/
 	min-width: 20%;
 }
 .items{
 	display: flex;
 	color: #fff;
-	background-color: #000;
+	background: radial-gradient(#ccc, #000);
 	justify-content: center;
 	margin: 5%;
 	padding: 5%;
 
 }
 
-.containerFlex{
+.containerLogo{
 	display: flex;
 	justify-content:center;
 	padding: 20px 0;
-	/*background-image: url('../assets/fondoDos.jpg');
-	background-repeat-y: no-repeat;
-	grid-area: containerFlex;*/
 }
 
 .contenido{
@@ -174,20 +192,23 @@ body{
 }
 
 .containerCuidados{
+	display: flex;
 	justify-content: center;
 	margin-top: 5rem;
 	margin-right: 2rem;
 }
 .cuidados{
-	display: flex;
 	color: #fff;
-	/*background-color: grey;*/
-	/*justify-content: flex-end;*/
 	grid-area: descripcionUno;
     background-color: #000;
     margin: 5%;
     padding: 5%;
     width: 90%;
+    animation-name: animate__bounceIn;
+	animation-duration: 2s;
+	animation-iteration-count: 2s;
+	animation-delay: 0s;
+	animation-timing-function: 3s;
 
 }
 
@@ -199,14 +220,31 @@ body{
     line-height: 2rem;
     background-color: #000;
     margin-left: 3rem;
+   	animation-name: animate__bounceIn;
+	animation-duration: 2s;
+	animation-iteration-count: 2s;
+	animation-delay: 0s;
+	animation-timing-function: 3s;
 }
 
 .img{
 	display: flex;
 	justify-self: center;
-	width: 100vh;
-	height: 100vh;
+	width: 90vh;
+	height: 90vh;
 	grid-area: foto;
+	animation-name: animate__bounceIn;
+	animation-duration: 2s;
+	animation-iteration-count: 2s;
+	animation-delay: 0s;
+	animation-timing-function: 3s;
+}
+
+
+@keyframes animate__bounceIn {
+	0%{ width: 25vh; }
+	50%{ width: 50vh; }
+
 }
 
 .footerDos{

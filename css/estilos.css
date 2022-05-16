@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Nunito', sans-serif;
+
+
+}
+/*Esto es index.html*/
+
+
+#containerGrid{
+	background-image: url(../assets/1539.jpg);
+	background-size: contain;
+	background-blend-mode: hard-light;
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"containerFlex"
+	"contenido"
+	"fotos"
+	"footer"
+	"arriba"
+
+}
+
+.fotos{
+	grid-area: fotos;
+	display: flex;
+	justify-content: space-around;
+}
+
+.imagenUno{
+    height: 25rem;
+    width: 25rem;
+}
+
+.imagenDos{
+	height: 25rem;
+    width: 25rem;
+}
+
+.imagenTres{
+    height: 25rem;
+    width: 25rem;
+}
+
+.titulo{
+	font-family: 'Koulen', cursive;
+	font-size: 20px;
+}
+}
+.header{
+	display: inline-flex;
+	/*position: sticky;*/
+	justify-content: space-around;
+	grid-area: header;
+	background-image: url('../assets/fondoDos.jpg');
+	background-repeat-y: no-repeat;
+	background-blend-mode: hard-light;
+}
+.menu{
+	display: flex;
+	background-color: grey;
+	color: #000;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	grid-area: header;
+}
+
+.itemLogo{
+	display: flex;
+	background-image: url('../assets/fondoDos.jpg');
+	background-repeat-y: no-repeat;
+	justify-content: center;
+}
+
+.itemUno{
+	/*grid-area: itemUno;*/
+	min-width: 20%;
+	
+}
+
+.itemDos{
+	/*grid-area: itemDos;*/
+	color: #fff;
+	min-width: 20%;
+}
+
+.itemTres{
+	/*grid-area: itemTres;*/
+	color: #fff;
+	min-width: 20%;
+}
+
+.itemCuatro{
+	/*grid-area: itemCuatro;*/
+	min-width: 20%;
+}
+
+.itemCinco{
+	/*grid-area: itemCinco;*/
+	min-width: 20%;
+}
+.items{
+	display: flex;
+	color: #fff;
+	background-color: #000;
+	justify-content: center;
+	margin: 5%;
+	padding: 5%;
+
+}
+
+.containerFlex{
+	display: flex;
+	justify-content:center;
+	padding: 20px 0;
+	/*background-image: url('../assets/fondoDos.jpg');
+	background-repeat-y: no-repeat;
+	grid-area: containerFlex;*/
+}
+
+.contenido{
+	grid-area: contenido;
+}
+.arriba{
+	grid-area: arriba;
+}
+.footer{
+	display: flex;
+	margin: 25px;
+	padding: 10px;
+	background-color: grey;
+	color: #000;
+	justify-content: space-around;
+	grid-area: footer;
+
+}
+
+.arriba{
+	text-decoration: none;
+	color: blue;
+	margin-top: 2rem;
+}
+
+/*empieza cuidados.html*/
+
+.bodyCuidados{
+	background-image: url(../assets/1539.jpg);
+	background-size: contain;
+	background-blend-mode: hard-light;
+}
+#containerGridDos{
+	display: grid;
+	grid-template-areas: 
+	"foto descripcionUno ."
+	"foto . ."
+	"descripcionDos . ."
+	"footer footer footer"
+	"arriba . ."
+
+}
+
+.containerCuidados{
+	justify-content: center;
+	margin-top: 5rem;
+	margin-right: 2rem;
+}
+.cuidados{
+	display: flex;
+	color: #fff;
+	/*background-color: grey;*/
+	/*justify-content: flex-end;*/
+	grid-area: descripcionUno;
+    background-color: #000;
+    margin: 5%;
+    padding: 5%;
+    width: 90%;
+
+}
+
+.destacado{
+	color: #fff;
+	grid-area: descripcionDos;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #000;
+    margin-left: 3rem;
+}
+
+.img{
+	display: flex;
+	justify-self: center;
+	width: 100vh;
+	height: 100vh;
+	grid-area: foto;
+}
+
+.footerDos{
+	grid-area: footer;
+	display: flex;
+	margin: 25px;
+	padding: 10px;
+	background-color: grey;
+	color: #000;
+	justify-content: space-around;
+
+}
+.arriba{
+	grid-area: arriba;
+	margin-left: 1rem;
+	color: #fff;
+}
